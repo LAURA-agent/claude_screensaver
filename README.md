@@ -27,9 +27,9 @@ pip install -r requirements.txt
 
 Cairo requires GTK runtime libraries on Windows:
 
-1. Download and install GTK3 runtime from: https://github.com/nicotine-plus/nicotine-plus/releases/download/3.3.0/gtk3-runtime-3.24.41-2-UCRT64-opt.zip
-2. Extract to `C:\Program Files\GTK3-Runtime-Win64`
-3. Add `C:\Program Files\GTK3-Runtime-Win64\bin` to your system PATH
+1. Download GTK3 runtime installer from: https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer/releases
+2. Run **gtk3-runtime-3.24.31-2022-01-04-ts-win64.exe** (or latest version)
+3. The installer handles PATH automatically
 4. Restart your terminal and run:
 
 ```bash

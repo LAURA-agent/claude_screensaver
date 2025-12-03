@@ -16,8 +16,45 @@ A fullscreen animated screensaver featuring Claude's asterisk logo with DVD-styl
 
 ## Installation
 
+### macOS
+
 ```bash
-pip install pygame cairosvg flask flask-cors
+brew install cairo
+pip install -r requirements.txt
+```
+
+### Windows
+
+Cairo requires GTK runtime libraries on Windows:
+
+1. Download and install GTK3 runtime from: https://github.com/nicotine-plus/nicotine-plus/releases/download/3.3.0/gtk3-runtime-3.24.41-2-UCRT64-opt.zip
+2. Extract to `C:\Program Files\GTK3-Runtime-Win64`
+3. Add `C:\Program Files\GTK3-Runtime-Win64\bin` to your system PATH
+4. Restart your terminal and run:
+
+```bash
+pip install -r requirements.txt
+```
+
+**Alternative (using MSYS2):**
+```bash
+# In MSYS2 terminal
+pacman -S mingw-w64-x86_64-cairo
+pip install -r requirements.txt
+```
+
+### Linux (Debian/Ubuntu)
+
+```bash
+sudo apt-get install libcairo2-dev
+pip install -r requirements.txt
+```
+
+### Linux (Fedora)
+
+```bash
+sudo dnf install cairo-devel
+pip install -r requirements.txt
 ```
 
 ## Usage
